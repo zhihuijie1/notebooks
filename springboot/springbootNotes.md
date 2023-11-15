@@ -38,6 +38,25 @@
 
 
 
+yaml文件是以数据为中心的。数据值前面必须有空格
+
+```yaml
+# 数组写法
+address:
+	- beijing
+	- shanghai
+
+
+msg1: "hello \n world" # 会识别转义字符
+msg2: 'hello \n world' # 不会识别转义字符
+
+
+# 参数引用
+name: wangwu
+person:
+	name: ${name}
+```
+
 
 
 

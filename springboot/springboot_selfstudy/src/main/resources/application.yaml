@@ -1,0 +1,11 @@
+sentence: "我爱牟倩"
+
+server:
+  port: 8082
+
+address:
+  - beijing
+  - tianjie
+  - qingdao
+
+

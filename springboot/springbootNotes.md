@@ -36,7 +36,7 @@
 > }
 > ```
 
-
+# yaml文件
 
 yaml文件是以数据为中心的。数据值前面必须有空格
 
@@ -56,6 +56,99 @@ name: wangwu
 person:
 	name: ${name}
 ```
+
+
+
+# 文件的注入
+
+
+
+
+
+
+
+# 使用profile实现配置动态切换功能
+
+
+
+![](D:/%E4%BD%A0%E5%A5%BDJava/1714.jpg)
+
+
+
+### **使用yml多文档方式实现配置动态切换**
+
+```yaml
+---
+server:
+  port: 8081
+
+spring:
+  profiles: dev
+---
+server:
+  port: 8082
+
+spring:
+  profiles: pro
+---
+server:
+  port: 8083
+
+spring:
+  profiles: test
+---
+spring:
+  profiles:
+    active: pro
+```
+
+![](D:/%E4%BD%A0%E5%A5%BDJava/1715.jpg)
+
+
+
+### 虚拟机参数进行配置动态切换
+
+![](D:/%E4%BD%A0%E5%A5%BDJava/1717.jpg)
+
+![](D:/%E4%BD%A0%E5%A5%BDJava/1718.jpg)
+
+
+
+### 命令行参数进行配置动态切换
+
+![](D:/%E4%BD%A0%E5%A5%BDJava/1719.jpg)
+
+
+
+![](D:/%E4%BD%A0%E5%A5%BDJava/1720.jpg)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
